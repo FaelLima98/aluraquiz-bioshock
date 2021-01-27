@@ -1,12 +1,13 @@
+import React from 'react';
 import styled from 'styled-components';
-import db from '../db.json'
+import db from '../db.json';
 import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
-export const  QuizContainer = styled.div`
+export const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px; 
   padding-top: 45px;
@@ -21,25 +22,25 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo/>
-        <Widget>   
-            <Widget.Header>
-              <h1>BioShock</h1>   
-            </Widget.Header>
+        <QuizLogo />
+        <Widget>
+          <Widget.Header>
+            <h1>BioShock</h1>
+          </Widget.Header>
 
-            <Widget.Content>
-              <p>Poderia, por gentileza, responder este quiz?</p>
-            </Widget.Content>       
+          <Widget.Content>
+            <p>Poderia, por gentileza, responder este quiz?</p>
+          </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-              <h1>Quizes da Galera</h1>            
+            <h1>Quizes da Galera</h1>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/FaelLima98" />   
+      <GitHubCorner projectUrl="https://github.com/FaelLima98" />
     </QuizBackground>
   );
 }

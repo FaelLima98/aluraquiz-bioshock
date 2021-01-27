@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-
+/* eslint-disable linebreak-style */
+import React from 'react';
+import styled from 'styled-components';
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
   background-color: #00000070;
@@ -11,19 +12,22 @@ const FooterWrapper = styled.footer`
     width: 58px;
     margin-right: 23px;
   }
-  a {
-    color: white;
-    text-decoration: none;
-    transition: .3s;
-    &:hover,
-    &:focus {
-      opacity: .5;
-    }
-    span {
-      text-decoration: underline;
+  p {
+    font-family: 'Lato', sans-serif;
+    a  {
+      color: white;
+      text-decoration: none;
+      transition: .3s;
+      &:hover,
+      &:focus {
+        opacity: .5;
+      }
+      span {
+        text-decoration: underline;
+      }
     }
   }
-`;
+  `;
 
 export default function Footer(props) {
   return (
